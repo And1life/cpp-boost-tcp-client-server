@@ -69,9 +69,9 @@ The client connects to the host and port defined in `client.cpp` (by default `12
 
 ```bash
 Print message: hello
-Reply: Message received!
+Response from the server: Message received!
 Print message: second line
-Reply: Message received!
+Response from the server: Message received!
 ```
 
 If you type `^C` (or close the client), the client closes the TCP connection and the server prints that the client disconnected.
@@ -136,7 +136,7 @@ cpp-boost-tcp-client-server/
    ```
 3. Commit with Conventional Commits:
    ```bash
-   git commit -m "feat(logger): add feature description"
+   git commit -m "feat(Server): add feature description"
    ```
 4. Push and create a Pull Request
 
