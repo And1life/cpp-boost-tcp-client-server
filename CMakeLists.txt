@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.10)  
 project(boost_asio_tcp_example)  
 
+if(POLICY CMP0167)
+    cmake_policy(SET CMP0167 NEW)
+endif()
 
 set(CMAKE_CXX_STANDARD 11)
 
