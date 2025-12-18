@@ -18,6 +18,13 @@ add_executable(server
 
 
 target_link_libraries(server PRIVATE Boost::system)
-
-
 target_include_directories(server PRIVATE include)
+
+
+add_executable(client
+    apps/client_app.cpp  
+    src/client.cpp       
+)
+
+target_link_libraries(client PRIVATE Boost::system)
+target_include_directories(client PRIVATE include)
